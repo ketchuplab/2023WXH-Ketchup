@@ -1,0 +1,2233 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+
+/* Document
+   ========================================================================== */
+
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+	line-height: 1.15;
+	/* 1 */
+	-webkit-text-size-adjust: 100%;
+	/* 2 */
+}
+
+
+/* Sections
+   ========================================================================== */
+
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+	margin: 0;
+}
+
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+	display: block;
+}
+
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+
+/* Grouping content
+   ========================================================================== */
+
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+	box-sizing: content-box;
+	/* 1 */
+	height: 0;
+	/* 1 */
+	overflow: visible;
+	/* 2 */
+}
+
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+
+/* Text-level semantics
+   ========================================================================== */
+
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+	background-color: transparent;
+	text-decoration: none;
+	color: #000;
+}
+
+
+/* 状态一: 未被访问过的链接 */
+
+a:link {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/* 状态二: 已经访问过的链接 */
+
+a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/* 状态三: 鼠标划过(停留)的链接(默认红色) */
+
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/* 状态四: 被点击的链接 */
+
+a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+	border-bottom: none;
+	/* 1 */
+	text-decoration: underline;
+	/* 2 */
+	text-decoration: underline dotted;
+	/* 2 */
+}
+
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+
+/* Embedded content
+   ========================================================================== */
+
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+	border-style: none;
+}
+
+
+/* Forms
+   ========================================================================== */
+
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	/* 1 */
+	font-size: 100%;
+	/* 1 */
+	line-height: 1.15;
+	/* 1 */
+	margin: 0;
+	/* 2 */
+}
+
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+	/* 1 */
+	overflow: visible;
+}
+
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+	/* 1 */
+	text-transform: none;
+}
+
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+	box-sizing: border-box;
+	/* 1 */
+	color: inherit;
+	/* 2 */
+	display: table;
+	/* 1 */
+	max-width: 100%;
+	/* 1 */
+	padding: 0;
+	/* 3 */
+	white-space: normal;
+	/* 1 */
+}
+
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+	vertical-align: baseline;
+}
+
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	/* 1 */
+	padding: 0;
+	/* 2 */
+}
+
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+	-webkit-appearance: textfield;
+	/* 1 */
+	outline-offset: -2px;
+	/* 2 */
+}
+
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	/* 1 */
+	font: inherit;
+	/* 2 */
+}
+
+
+/* Interactive
+   ========================================================================== */
+
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+	display: block;
+}
+
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+	display: list-item;
+}
+
+
+/* Misc
+   ========================================================================== */
+
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+	display: none;
+}
+
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+	display: none;
+}
+
+@font-face {
+	font-family: 'Alcubierre';
+	src: url('../fonts/Alcubierre.otf');
+}
+
+body {
+	font-family: 'Alcubierre';
+	font-style: normal;
+	font-weight: 400;
+	color: #333333;
+	background: url('../images/bg.png') repeat;
+	letter-spacing: 0.01rem;
+}
+
+.header {
+	position: fixed;
+	top: 0.4rem;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	z-index: 999;
+	height: 0.8rem;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header .nav {
+	display: flex;
+	width: 16rem;
+	box-shadow: 0 0.04rem 0.04rem rgba(0, 0, 0, 0.25);
+	border-radius: 0.04rem;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.header .nav .logo {
+	width: 5rem;
+	justify-content: left;
+	align-items: center;
+	display: flex;
+}
+
+.header .nav .logo img {
+	margin-left: 0.25rem;
+	width: auto;
+	display: block;
+	max-width: 100%;
+	height: 0.6rem;
+}
+
+.header .nav .menus {
+	width: 8rem;
+	padding: 0;
+	margin: 0;
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+
+.header .nav .menus li {
+	display: inline-block;
+	border-left: 0.01rem solid #333;
+	padding: 0 0.15rem;
+	font-size: 0.28rem;
+	font-weight: 400;
+	cursor: pointer;
+	height: 0.3rem;
+	line-height: 0.3rem;
+}
+
+.header .nav .menus li:first-child {
+	border-left: none;
+}
+
+.header .nav .accounts {
+	width: 3rem;
+	text-align: center;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	justify-content: right;
+	align-items: center;
+	display: flex;
+}
+
+.header .nav .accounts .wallet {
+	font-size: 0.24rem;
+	width: auto;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 0.3rem;
+	display: flex;
+	background: #fafafa;
+	border-radius: 25rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	padding: 0 0.5rem;
+}
+
+.header .nav .accounts .wallet .face {
+	width: 0.4rem;
+	height: 0.4rem;
+	float: right;
+	padding: 0.1rem;
+}
+
+.header .nav .accounts .wallet .navlist {
+	background: #fff;
+	border-radius: 0.08rem;
+	box-shadow: 0.01rem 0.01rem 0.05rem #ddd;
+	display: none;
+	padding: 0;
+	position: absolute;
+	width: 2rem;
+	margin-left: 0rem;
+	margin-top: 0.6rem;
+}
+
+.header .nav .accounts .wallet .navlist ul {
+	list-style: none;
+	margin: 0;
+	padding: 0.1rem 0
+}
+
+.header .nav .accounts .wallet .navlist ul li {
+	font-size: 0.2rem;
+	padding: 0 0.1rem;
+	text-align: center
+}
+
+.header .nav .accounts .wallet .navlist ul li:hover {
+	background: #0093e9;
+	color: #fff;
+	cursor: pointer
+}
+
+.header .nav .accounts .wallet:hover .navlist {
+	display: block
+}
+
+.main {
+	width: 16rem;
+	padding: 1.6rem 0 0.6rem 0;
+	margin: 0 auto;
+}
+
+.main .print1 {
+	width: auto;
+	height: 100%;
+	display: flex;
+	padding: 0 0.25rem;
+}
+
+.main .print1 .search-panel {
+	width: 50%;
+	padding: 0;
+	margin: 0;
+}
+
+.main .print1 .search-panel .title {
+	font-size: 1rem;
+	line-height: 1rem;
+	color: #00B8A9;
+	width: auto;
+	height: 2.4rem;
+	text-shadow: 0 0.04rem 0.04rem rgba(0, 0, 0, 0.25);
+	padding-top: 0.6rem;
+}
+
+.main .print1 .search-panel .desc {
+	width: auto;
+	height: 0.6rem;
+	font-size: 0.24rem;
+	line-height: 0.3rem;
+	color: #00B8A9;
+}
+
+.main .print1 .search-panel .go-search {
+	margin-top: 0.6rem;
+	margin-bottom: 0.8rem;
+	display: flex;
+}
+
+.main .print1 .search-panel .go-search .input-search {
+	background: #FFFFFF;
+	border: 0.01rem solid #E76839;
+	box-shadow: 0.04rem 0.04rem 0.04rem rgba(0, 0, 0, 0.25);
+	width: 4.92rem;
+	height: 0.72rem;
+	padding: 0 0.24rem;
+	color: #999;
+	font-size: 0.28rem;
+	outline: #E76839;
+}
+
+.main .print1 .search-panel .go-search .button-search {
+	width: 0.84rem;
+	height: 0.84rem;
+	background: url('../images/search-btn.png') no-repeat;
+	border-radius: 0.04rem;
+	border: none;
+	margin-left: 0.12rem;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.main .print1 .animation-panel {
+	width: 50%;
+	padding: 0;
+	margin: 0;
+}
+
+.main .print1 .animation-panel .bg-bottle {
+	background: url('../images/bg-bottle.png') no-repeat;
+	width: 5.46rem;
+	height: 6.76rem;
+	background-size: 76%;
+	position: absolute;
+	margin-left: 1.6rem;
+	z-index: 1;
+	margin-top: -0.4rem;
+}
+
+.main .print1 .animation-panel .bg-skeleton {
+	background: url('../images/bg-skeleton.png') no-repeat;
+	background-size: 72%;
+	width: 3.98rem;
+	height: 4.08rem;
+	position: absolute;
+	margin-top: 3rem;
+	margin-left: 3.4rem;
+	z-index: 2;
+}
+
+.main .print1 .animation-panel .bg-skeleton .bg-tomato1 {
+	background: url('../images/5.png') no-repeat;
+	width: 1.2rem;
+	height: 1.2rem;
+	position: absolute;
+	margin-left: 1.4rem;
+	margin-top: 0.7rem;
+	z-index: 3;
+	background-size: 50%;
+}
+
+.main .print1 .animation-panel .bg-skeleton .bg-tomato2 {
+	background: url('../images/1.png') no-repeat;
+	width: 1.2rem;
+	height: 1.2rem;
+	position: absolute;
+	z-index: 3;
+	margin-top: 0.64rem;
+	margin-left: 2.2rem;
+	background-size: 40%;
+}
+
+.main .print1 .animation-panel .bg-fire {
+	background: url('../images/bg-fire.png') no-repeat;
+	width: 4rem;
+	height: 4.24rem;
+	position: absolute;
+	margin-top: 3.6rem;
+	z-index: 0;
+	background-size: 76%;
+	margin-left: 0.4rem;
+}
+
+.main .print2 {
+	width: auto;
+	height: 100%;
+	display: flex;
+	padding: 0 0.25rem;
+}
+
+.main .print2 .result {
+	width: 45%;
+}
+
+.main .print2 .result .result-panel {
+	background: #FFFFFF;
+	box-shadow: 0.04rem 0.04rem 0.04rem rgba(0, 0, 0, 0.25);
+	border-radius: 0.2rem;
+	width: 82%;
+	height: 5.2rem;
+	padding: 0.4rem 0.3rem;
+}
+
+.main .print2 .result .result-panel .loading {
+	background: url('../images/loadding.gif') center no-repeat;
+	width: 100%;
+	height: 1rem;
+	margin-top: 1.5rem;
+}
+
+.main .print2 .result .result-panel .loading-txt {
+	text-align: center;
+	width: auto;
+	padding: 0.2rem;
+	font-size: 0.28rem;
+	color: #999;
+}
+
+.main .print2 .result .result-panel .wow {
+	font-size: 0.6rem;
+	text-align: left;
+	color: #EA693A;
+	height: 0.9rem;
+	line-height: 0.9rem;
+}
+
+.main .print2 .result .result-panel .kid {
+	font-size: 0.8rem;
+	text-align: left;
+	background: url('../images/1.png') no-repeat;
+	width: auto;
+	padding-left: 1rem;
+	background-size: contain;
+	height: 1rem;
+	line-height: 1rem;
+}
+
+.main .print2 .result .result-panel .kid0 {
+	background: url('../images/1.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print2 .result .result-panel .kid1 {
+	background: url('../images/2.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print2 .result .result-panel .kid2 {
+	background: url('../images/3.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print2 .result .result-panel .kid3 {
+	background: url('../images/4.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print2 .result .result-panel .kid4 {
+	background: url('../images/5.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print2 .result .result-panel .kid5 {
+	background: url('../images/6.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print2 .result .result-panel .kid .keywords {
+	color: #00B8A9;
+	vertical-align: middle;
+}
+
+.main .print2 .result .result-panel .kid .black {
+	color: #000000;
+	vertical-align: middle;
+}
+
+.main .print2 .result .result-panel .line {
+	height: 0.36rem;
+	border-left: 0.01rem dotted #999;
+	margin-left: 0.3rem;
+}
+
+.main .print2 .result .result-panel .release {
+	height: 0.3rem;
+	line-height: 0.3rem;
+	text-indent: 0.6rem;
+	background: url('../images/seed.png') 3% center no-repeat;
+	background-size: 6%;
+	font-size: 0.24rem;
+	margin-bottom: 0.2rem;
+}
+
+.main .print2 .result .result-panel .infos {
+	font-size: 0.24rem;
+	line-height: 0.32rem;
+	text-align: left;
+	padding: 0 0.2rem;
+	color: #EA693A;
+}
+
+.main .print2 .result .result-panel .desc {
+	font-size: 0.24rem;
+	text-indent: 0.6rem;
+}
+
+.main .print2 .result .result-panel .unit {
+	font-size: 0.24rem;
+	text-align: center;
+	margin-top: 0.4rem;
+}
+
+.main .print2 .result .result-panel .unit .gd {
+	color: #00B8A9;
+}
+
+.main .print2 .result .result-panel .verified {
+	color: #1DA1F2;
+	font-weight: bolder;
+	text-align: center;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	font-size: 0.28rem;
+	background: url('../images/ok.png') 22% center no-repeat;
+	background-size: 0.32rem;
+}
+
+.main .print2 .result .result-panel .invite {
+	color: #00b8a9;
+	cursor: pointer;
+	font-weight: bolder;
+	text-decoration-line: underline;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	text-align: center;
+	font-size: 0.24rem;
+}
+
+.main .print2 .result .result-panel .msg {
+	font-size: 0.24rem;
+	text-align: left;
+	height: 0.6rem;
+	padding: 0.2rem;
+}
+
+.main .print2 .result .result-panel .code {
+	height: 0.52rem;
+	line-height: 0.52rem;
+	margin: 0.4rem 0 0.2rem 0;
+}
+
+.main .print2 .result .result-panel .code .input {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.24rem;
+	text-align: center;
+	color: #00B8A9;
+	width: 99%;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	border: 0.01rem solid #00B8A9;
+	outline: none;
+}
+
+.main .print2 .result .result-panel .opt {
+	width: 100%;
+	height: auto;
+	padding: 0.15rem 0 0 0;
+}
+
+.main .print2 .result .result-panel .opt .buy-btn {
+	background: #EA693A;
+	border-radius: 4px;
+	color: #fff;
+	text-align: center;
+	height: 0.56rem;
+	line-height: 0.56rem;
+	width: 80%;
+	margin: 0.2rem auto;
+	cursor: pointer;
+	font-size: 0.28rem;
+}
+
+.main .print2 .recommend {
+	width: 55%;
+	background: url('../images/bg-recommend.png') no-repeat;
+	background-size: cover;
+	box-shadow: 0.04rem 0.04rem 0.04rem rgb(0 0 0 / 25%);
+	border-radius: 0.2rem;
+	height: 6rem;
+}
+
+.main .print2 .recommend .popo {
+	height: 5.48rem;
+	width: 8rem;
+	margin: 0.26rem;
+}
+
+.main .print2 .recommend .popo .tomato {
+	display: block;
+}
+
+.main .print2 .recommend .popo .tomato .tips {
+	display: none;
+	width: 2.6rem;
+	position: absolute;
+}
+
+.main .print2 .recommend .popo .tomato:hover .tips {
+	display: block;
+	cursor: pointer;
+}
+
+.main .print3 {
+	width: auto;
+	height: auto;
+	display: flex;
+	padding: 0 0.25rem;
+}
+
+.main .print3 .result {
+	width: 60%;
+}
+
+.main .print3 .result .search-keysword {
+	font-size: 0.8rem;
+	color: #00B8A9;
+	height: 1rem;
+	line-height: 1rem;
+	background: url('../images/1.png') no-repeat;
+	width: auto;
+	padding-left: 1rem;
+	background-size: contain;
+}
+
+.main .print3 .result .search1 {
+	background: url('../images/1.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print3 .result .search2 {
+	background: url('../images/2.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print3 .result .search3 {
+	background: url('../images/3.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print3 .result .search4 {
+	background: url('../images/4.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print3 .result .search5 {
+	background: url('../images/5.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print3 .result .search-keysword .black {
+	color: #000;
+}
+
+.main .print3 .result .result-panel {
+	background: #FFFFFF;
+	box-shadow: 0.04rem 0.04rem 0.02rem 0.01rem #A6ABBD;
+	border-radius: 0.2rem;
+	padding: 0 0.3rem;
+	list-style: none;
+	height: 4.4rem;
+}
+
+.main .print3 .result .result-panel li {
+	display: flex;
+	width: 100%;
+	height: auto;
+	min-height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+.main .print3 .result .result-panel .info {
+	font-size: 0.28rem;
+	color: #000000;
+	height: 1.2rem;
+	line-height: 0.4rem;
+	font-weight: bolder;
+	margin-top: 0.8rem;
+}
+
+.main .print3 .result .result-panel .lf {
+	width: 50%;
+	text-align: right;
+	padding-right: 0.1rem;
+	font-size: 0.28rem;
+}
+
+.main .print3 .result .result-panel .rt {
+	color: #00B8A9;
+	font-size: 0.32rem;
+}
+
+.main .print3 .result .result-panel .rt .jb {
+	background: url('../images/trophy.png') no-repeat;
+	background-size: contain;
+	float: right;
+	width: 0.28rem;
+	height: 0.28rem;
+	margin-left: 0.1rem;
+	margin-top: 0.05rem;
+}
+
+.main .print3 .result .result-release {
+	background: #FFFFFF;
+	box-shadow: 0.04rem 0.04rem 0.02rem 0.01rem #A6ABBD;
+	border-radius: 0.2rem;
+	padding: 0.4rem 0.3rem 0 0.3rem;
+	list-style: none;
+	height: 4rem;
+}
+
+.main .print3 .result .result-release .info {
+	font-size: 0.24rem;
+	min-height: 0.3rem;
+	display: flex;
+}
+
+.main .print3 .result .result-release .info .gd {
+	color: #EA693A;
+}
+
+.main .print3 .result .result-release .info .lft {
+	width: 40%;
+	background: url('../images/seed-big.png') center no-repeat;
+}
+
+.main .print3 .result .result-release .info .rft {
+	width: 60%;
+}
+
+.main .print3 .result .result-release .info .rft .price {
+	height: 0.6rem;
+	line-height: 0.8rem;
+	font-size: 0.32rem;
+	font-weight: bolder;
+	color: #00B8A9;
+}
+
+.main .print3 .result .result-release .info .rft .sale {
+	font-size: 0.28rem;
+	font-weight: lighter;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+.main .print3 .result .result-release .info .rft .remark {
+	font-size: 0.28rem;
+	height: auto;
+	line-height: 0.32rem;
+}
+
+.main .print3 .result .result-release .info .rft .opt-input {
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+
+.main .print3 .result .result-release .info .rft .opt-input .input {
+	color: #333;
+	border: 0.01rem solid #E76839;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	outline: none;
+	font-size: 0.32rem;
+	width: 78%;
+}
+
+.main .print3 .result .result-release .info .rft .opt-btn {
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+
+.main .print3 .result .result-release .info .rft .opt-btn .btn-total {
+	height: 0.56rem;
+	line-height: 0.56rem;
+	background: #00B8A9;
+	border-radius: 0.08rem;
+	color: #fff;
+	text-align: center;
+	width: 80%;
+	cursor: pointer;
+}
+
+.main .print3 .buy {
+	width: 40%;
+	justify-content: right;
+	display: flex;
+	align-items: center;
+}
+
+.main .print3 .buy .buy-panel {
+	background: #F8F3D4;
+	box-shadow: 0.04rem 0.04rem 0.02rem 0.01rem #A6ABBD;
+	border-radius: 0.2rem;
+	width: 82%;
+	height: auto;
+	font-size: 0.32rem;
+	color: #000000;
+	padding: 0.3rem;
+	margin-top: 1rem;
+	min-height: 3.8rem;
+}
+
+.main .print3 .buy .buy-panel .receipt {
+	background: url('../images/receipt.png') left no-repeat;
+	background-size: 1rem;
+	height: 1rem;
+	line-height: 1rem;
+	width: auto;
+	padding-left: 1.2rem;
+	font-weight: bolder;
+	margin-bottom: 0.2rem;
+	font-size: 0.32rem;
+}
+
+.main .print3 .buy .buy-panel .price-title {
+	text-align: left;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-weight: bolder;
+	font-size: 0.28rem;
+}
+
+.main .print3 .buy .buy-panel .price-ico {
+	background: url('../images/chart.png') center no-repeat;
+	width: 100%;
+	height: 1.6rem;
+	background-size: 30%;
+}
+
+.main .print3 .buy .buy-panel .price-old {
+	text-align: center;
+	font-size: 0.28rem;
+	text-decoration-line: line-through;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+.main .print3 .buy .buy-panel .price {
+	font-size: 0.28rem;
+	color: #00B8A9;
+	text-align: center;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+.main .print3 .buy .buy-panel .back-title {
+	font-size: 0.28rem;
+	text-align: left;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-weight: bolder;
+}
+
+.main .print3 .buy .buy-panel .back-desc {
+	font-size: 0.24rem;
+	text-decoration-line: underline;
+	color: #00B8A9;
+	text-align: center;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	cursor: pointer;
+}
+
+.main .print3 .buy .buy-panel .gobuy {
+	height: 0.6rem;
+	line-height: 0.6rem;
+	display: flex;
+	width: 100%;
+	margin-top: 0.2rem;
+}
+
+.main .print3 .buy .buy-panel .gobuy .icon {
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 0.6rem;
+}
+
+.main .print3 .buy .buy-panel .gobuy .icon img {
+	height: 0.48rem;
+	width: 0.48rem;
+}
+
+.main .print3 .buy .buy-panel .gobuy .message {
+	width: 75%;
+	height: auto;
+}
+
+.main .print3 .buy .buy-panel .gobuy .message .loading {
+	font-size: 0.24rem;
+	color: #3EC6B3;
+	height: 0.3rem;
+	line-height: 0.3rem;
+}
+
+.main .print3 .buy .buy-panel .gobuy .message .failed {
+	font-size: 0.24rem;
+	color: #EA693A;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	text-decoration-line: underline;
+	cursor: pointer;
+}
+
+.main .print3 .buy .buy-panel .gobuy .message .success {
+	font-size: 0.24rem;
+	color: #3EC6B3;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	letter-spacing: 0rem;
+	cursor: pointer;
+	text-decoration-line: underline;
+}
+
+.main .print3 .buy .buy-panel .gobuy .message .msg {
+	height: 0.3rem;
+	line-height: 0.3rem;
+	font-size: 0.24rem;
+}
+
+.main .print3 .buy .buy-panel .gobuy .message .msg .gd {
+	color: #00B8A9;
+	cursor: pointer;
+	text-decoration-line: underline;
+}
+
+.main .print3 .buy .buy-panel .gobuy .buy-btn {
+	background: #EA693A;
+	border-radius: 4px;
+	color: #fff;
+	text-align: center;
+	height: 0.56rem;
+	line-height: 0.56rem;
+	width: 3rem;
+	margin: 0 auto;
+	cursor: pointer;
+	font-size: 0.28rem;
+}
+
+.main .print4 {
+	width: auto;
+	height: 100%;
+	padding: 0 0.25rem;
+}
+
+.main .print4 .details {
+	width: 100%;
+}
+
+.main .print4 .details .search-keysword {
+	font-size: 1rem;
+	color: #00B8A9;
+	height: 1rem;
+	line-height: 1rem;
+	background: url('../images/5.png') no-repeat;
+	width: auto;
+	padding-left: 1rem;
+	background-size: contain;
+}
+
+.main .print4 .details .search-keysword .black {
+	color: #000;
+}
+
+.main .print4 .details .search1 {
+	background: url('../images/1.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print4 .details .search2 {
+	background: url('../images/2.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print4 .details .search3 {
+	background: url('../images/3.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print4 .details .search4 {
+	background: url('../images/4.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print4 .details .search5 {
+	background: url('../images/5.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print4 .details .search6 {
+	background: url('../images/6.png') no-repeat;
+	background-size: contain;
+}
+
+.main .print4 .details .details-panel {
+	background: #FFFFFF;
+	box-shadow: 0.04rem 0.04rem 0.02rem 0.01rem #A6ABBD;
+	border-radius: 0.2rem;
+	width: auto;
+	height: auto;
+	list-style: none;
+	padding: 0.3rem;
+	min-height: 4rem;
+}
+
+.main .print4 .details .details-panel .released {
+	display: flex;
+	width: 100%;
+	height: auto;
+	border-bottom: 0.01rem solid #eee;
+	margin-bottom: 0.4rem;
+	padding: 0 0 0.4rem 0;
+}
+
+.main .print4 .details .details-panel .released .dm {
+	width: 20%;
+}
+
+.main .print4 .details .details-panel .released .dm .followers-icon {
+	background: url('../images/followers.png') center no-repeat;
+	background-size: contain;
+	height: 1.8rem;
+}
+
+.main .print4 .details .details-panel .released .dm .seeds-icon {
+	background: url('../images/seed-big.png') center no-repeat;
+	background-size: contain;
+	height: 1.8rem;
+}
+
+.main .print4 .details .details-panel .released .dl {
+	width: 30%;
+}
+
+.main .print4 .details .details-panel .released .dl .number {
+	color: #00B8A9;
+	font-size: 0.32rem;
+	font-weight: bolder;
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+
+.main .print4 .details .details-panel .released .dl .text {
+	font-size: 0.28rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-weight: bolder;
+}
+
+.main .print4 .details .details-panel .released .dl .text .lock {
+	background: url('../images/sd.png') 70% center no-repeat;
+	background-size: 8%;
+}
+
+.main .print4 .details .details-panel .released .dl .opt {
+	height: 0.8rem;
+	line-height: 0.8rem;
+	width: 100%;
+	justify-content: left;
+	display: flex;
+	align-items: center;
+}
+
+.main .print4 .details .details-panel .released .dl .opt .btn {
+	background: #EA693A;
+	mix-blend-mode: darken;
+	border-radius: 0.04rem;
+	color: #fff;
+	text-align: center;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	width: 80%;
+}
+
+.main .print4 .details .details-panel .released .dl .opt .msg {
+	color: #EA693A;
+	text-align: left;
+	line-height: 0.2rem;
+	width: 80%;
+}
+
+.main .print4 .details .details-panel .released .dl .opt .verified {
+	color: #1DA1F2;
+	font-size: 0.28rem;
+	background: url('../images/dp.png') left center no-repeat;
+	background-size: 12%;
+	text-indent: 0.5rem;
+}
+
+.main .print4 .details .details-panel .released .dl .tips {
+	font-size: 0.24rem;
+	color: #00B8A9;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-decoration-line: underline;
+}
+
+.main .print4 .details .details-panel .released .dl .price {
+	font-size: 0.28rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+.main .print4 .details .details-panel .released .dl .price .gd {
+	color: #00B8A9;
+}
+
+.main .print4 .details .details-panel .released .dl .txt {
+	font-size: 0.24rem;
+}
+
+.main .print4 .details .details-panel .chart {
+	width: 100%;
+	display: flex;
+	height: auto;
+}
+
+.main .print4 .details .details-panel .chart .user {
+	width: 50%;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.main .print4 .details .details-panel .chart .user .user-info {
+	width: 100%;
+	height: 1.6rem;
+	line-height: 0.6rem;
+	display: flex;
+}
+
+.main .print4 .details .details-panel .chart .user .user-info .face {
+	width: 40%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.main .print4 .details .details-panel .chart .user .user-info .face img {
+	width: 1.4rem;
+	height: 1.4rem;
+	cursor: pointer;
+	margin-bottom: 0.2rem;
+	border-radius: 50%;
+	background: #eee;
+}
+
+.main .print4 .details .details-panel .chart .user .user-info .userinfo {
+	width: 60%;
+}
+
+.main .print4 .details .details-panel .chart .user .user-info .userinfo .text {
+	font-size: 0.28rem;
+}
+
+.main .print4 .details .details-panel .chart .user .user-info .userinfo .address {
+	color: #00B8A9;
+	font-size: 0.24rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	text-decoration-line: underline;
+}
+
+.main .print4 .details .details-panel .chart .user .user-info .address:hover {
+	background: url('../images/edit.png') right center no-repeat;
+	background-size: 0.24rem;
+	padding-right: 0.4rem;
+	cursor: pointer;
+}
+
+.main .print4 .details .details-panel .chart .user .user-info .num {
+	width: auto;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.24rem;
+	text-align: left;
+}
+
+.main .print4 .details .details-panel .chart .seeds {
+	width: auto;
+	text-align: center;
+	display: flex;
+	font-size: 0.48rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.main .print4 .details .details-panel .chart .seeds .seeds-panel {
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+
+.main .print4 .details .details-panel .chart .seeds .seeds-panel .tips {
+	width: 100%;
+	height: 0.3rem;
+	line-height: 0.1rem;
+	font-size: 0.24rem;
+}
+
+.main .print4 .details .details-panel .chart .seeds .seeds-panel .tips .gd {
+	color: #00B8A9;
+}
+
+.main .print4 .details .details-panel .chart .seeds .seeds-panel .line {
+	width: 100%;
+	height: 0.02rem;
+	line-height: 0.02rem;
+	display: flex;
+}
+
+.main .print4 .details .details-panel .chart .seeds .seeds-panel .line .dot {
+	border-radius: 50%;
+	background: #00B8A9;
+	height: 0.06rem;
+	width: 0.1rem;
+}
+
+.main .print4 .details .details-panel .chart .seeds .seeds-panel .line .l {
+	width: 3rem;
+	background: #00B8A9;
+	height: 0.02rem;
+	margin-top: 0.02rem;
+}
+
+.main .print4 .details .details-panel .chart .round {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main .print4 .details .details-panel .chart .round .pie {
+	width: 2.8rem;
+	height: 2.8rem;
+	border-radius: 50%;
+	background: #F8F3D4;
+	background-image: linear-gradient(to right, transparent 50%, #00B8A9 0);
+}
+
+.main .print4 .details .details-panel .chart .round .pie::before {
+	content: '';
+	display: block;
+	margin-left: 50%;
+	height: 100%;
+	border-radius: 0px 100% 100% 0/50%;
+	background-color: inherit;
+	transform-origin: left;
+	transform: rotate(0.02turn);
+}
+
+.main .print4 .details .details-panel .chart .round .pie-title {
+	font-size: 0.24rem;
+	position: absolute;
+	width: 1.6rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	margin-top: 0.3rem;
+	text-align: center;
+}
+
+.main .print4 .details .details-panel .share {
+	display: flex;
+	width: 100%;
+	background: #F8F3D4;
+	border-radius: 0.08rem;
+	margin-bottom: 0.4rem;
+}
+
+.main .print4 .details .details-panel .share .follow-info {
+	width: 70%;
+	font-size: 0.28rem;
+}
+
+.main .print4 .details .details-panel .share .follow-info .tp {
+	padding: 0.2rem;
+	color: #EA693A;
+}
+
+.main .print4 .details .details-panel .share .follow-info .bt {
+	padding: 0.2rem;
+}
+
+.main .print4 .details .details-panel .share .follow-now {
+	width: 30%;
+	text-align: center;
+	color: #00B8A9;
+	font-size: 0.42rem;
+	line-height: 2rem;
+	text-decoration-line: underline;
+}
+
+.main .print5 {
+	width: auto;
+	height: 100%;
+	padding: 0 0.25rem;
+}
+
+.main .print5 .user {
+	display: flex;
+	background: #FFFFFF;
+	box-shadow: 0.04rem 0.04rem 0.02rem 0.01rem #a6abbd;
+	border-radius: 0.2rem;
+	width: auto;
+	height: auto;
+	list-style: none;
+	padding: 0.3rem;
+	min-height: 4rem;
+}
+
+.main .print5 .user .userinfo {
+	width: 50%;
+}
+
+.main .print5 .user .userinfo ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.main .print5 .user .userinfo ul li {
+	display: flex;
+	min-height: 0.6rem;
+	line-height: 0.6rem;
+	height: auto;
+}
+
+.main .print5 .user .userinfo ul li .txt {
+	width: 1.6rem;
+	text-align: left;
+	padding-right: 0.1rem;
+	font-size: 0.28rem;
+}
+
+.main .print5 .user .userinfo ul li .val {
+	width: 5rem;
+	text-align: left;
+	color: #00B8A9;
+	font-size: 0.24rem;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.main .print5 .user .userinfo ul li .val .input {
+	border: 0.01rem solid #fff;
+	font-size: 0.28rem;
+	color: #999;
+	cursor: pointer;
+	outline: none;
+}
+
+.main .print5 .user .userinfo ul li .val .input:hover {
+	border: 0.01rem solid #999;
+}
+
+.main .print5 .user .userinfo ul li .val .img {
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 50%;
+	border: 0.01rem solid #eee;
+	margin-top: 0.2rem;
+	background: #eee;
+}
+
+.main .print5 .user .userinfo ul li .val .edituserinfo-btn {
+	background: #EA693A;
+	border-radius: 0.08rem;
+	color: #fff;
+	width: 1.6rem;
+	text-align: center;
+	margin-top: 0.2rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	cursor: pointer;
+}
+
+.main .print5 .user .verify {
+	width: 50%;
+}
+
+.main .print5 .user .verify .safety {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 1rem;
+}
+
+.main .print5 .user .verify .safety .icon-safety-unkonw {
+	background: url('../images/unkonw.png') center center no-repeat;
+	width: 0.72rem;
+	height: 0.72rem;
+	background-size: auto;
+}
+
+.main .print5 .user .verify .safety .icon-safety-ok {
+	background: url('../images/ok.png') center center no-repeat;
+	width: 0.72rem;
+	height: 0.72rem;
+	background-size: auto;
+}
+
+.main .print5 .user .verify .addresss {
+	font-size: 0.24rem;
+	color: #EA693A;
+	height: 0.4rem;
+	text-align: center;
+}
+
+.main .print5 .user .verify .addresss .gd {
+	color: #00B8A9;
+}
+
+.main .print5 .user .verify .msg {
+	color: #000000;
+	font-size: 0.24rem;
+	height: auto;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 0.2rem;
+}
+
+.main .print5 .user .verify .opt {
+	height: 0.8rem;
+	line-height: 0.8rem;
+	width: auto;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.main .print5 .user .verify .opt .verify-btn {
+	background: url('../images/twitter.png') 18% center no-repeat;
+	width: 3.2rem;
+	height: 0.52rem;
+	background-size: contain;
+	line-height: 0.52rem;
+	text-align: center;
+	text-indent: 0.6rem;
+	color: #1DA1F2;
+	font-size: 0.28rem;
+	cursor: pointer;
+	margin: 0 auto;
+	text-decoration-line: underline;
+}
+
+.main .print5 .user .verify .link {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.main .print5 .user .verify .link .icon-link {
+	background: url('../images/exchange.png') center no-repeat;
+	height: 0.64rem;
+	width: 0.64rem;
+	background-size: 50%;
+}
+
+.main .print5 .user .verify .user-twiiter {
+	display: flex;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	width: 2.6rem;
+	margin: 0 auto;
+	margin-bottom: 0.4rem;
+}
+
+.main .print5 .user .verify .user-twiiter .user-face {
+	width: 20%;
+	justify-content: right;
+	align-items: center;
+	display: flex;
+}
+
+.main .print5 .user .verify .user-twiiter .user-face img {
+	width: 0.52rem;
+	height: 0.52rem;
+	border-radius: 50%;
+	border: 0.01rem solid #eee;
+	background: #eee;
+}
+
+.main .print5 .user .verify .user-twiiter .user-face .icon-twiiter {
+	background: url('../images/twitter.png') center no-repeat;
+	width: 0.2rem;
+	height: 0.2rem;
+	background-size: contain;
+	position: absolute;
+	margin-top: 0.32rem;
+}
+
+.main .print5 .user .verify .user-twiiter .user-nickname {
+	width: 80%;
+	color: #00B8A9;
+	font-size: 0.24rem;
+	padding-left: 0.2rem;
+}
+
+.main .print6 {
+	width: auto;
+	height: 100%;
+	padding: 0 0.25rem;
+}
+
+.main .print6 .users {
+	width: 100%;
+	height: 1.6rem;
+	display: flex;
+	line-height: 1.6rem;
+	margin-bottom: 0.4rem;
+}
+
+.main .print6 .users .face {
+	width: 10%;
+	height: 100%;
+	justify-content: right;
+	display: flex;
+	align-items: center;
+}
+
+.main .print6 .users .face img {
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 50%;
+	border: 0.01rem solid #fff;
+	background: #fff;
+}
+
+.main .print6 .users .info {
+	width: 90%;
+	height: 1.6rem;
+	line-height: 0.4rem;
+	padding-right: 0.2rem;
+	text-align: right;
+}
+
+.main .print6 .users .info .remark {
+	font-size: 0.28rem;
+	font-weight: bolder;
+	margin-top: 0.2rem;
+}
+
+.main .print6 .users .info .nickname {
+	font-size: 0.28rem;
+	color: #00B8A9;
+}
+
+.main .print6 .users .info .sb-address {
+	font-size: 0.22rem;
+	color: #00B8A9;
+}
+
+.main .print6 .kidlist {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.main .print6 .kidlist li {
+	background: #FFFFFF;
+	box-shadow: 0.02rem 0.02rem 0.02rem 0.01rem #A6ABBD;
+	border-radius: 0.2rem;
+	padding: 0.6rem;
+	margin-bottom: 0.2rem;
+}
+
+.main .print6 .kidlist li .kid1 {
+	background: url('../images/1.png') left center no-repeat;
+	background-size: 0.6rem;
+	text-indent: 0.8rem;
+	font-size: 0.6rem;
+	height: 1rem;
+	line-height: 1rem;
+	color: #00B8A9;
+}
+
+.main .print6 .kidlist li .kid2 {
+	background: url('../images/2.png') left center no-repeat;
+	background-size: 0.6rem;
+	text-indent: 0.8rem;
+	font-size: 0.6rem;
+	height: 1rem;
+	line-height: 1rem;
+	color: #00B8A9;
+	cursor: pointer;
+}
+
+.main .print6 .kidlist li .kid3 {
+	background: url('../images/3.png') left center no-repeat;
+	background-size: 0.6rem;
+	text-indent: 0.8rem;
+	font-size: 0.6rem;
+	height: 1rem;
+	line-height: 1rem;
+	color: #00B8A9;
+}
+
+.main .print6 .kidlist li .kid4 {
+	background: url('../images/4.png') left center no-repeat;
+	background-size: 0.6rem;
+	text-indent: 0.8rem;
+	font-size: 0.6rem;
+	height: 1rem;
+	line-height: 1rem;
+	color: #00B8A9;
+}
+
+.main .print6 .kidlist li .kid5 {
+	background: url('../images/5.png') left center no-repeat;
+	background-size: 0.6rem;
+	text-indent: 0.8rem;
+	font-size: 0.6rem;
+	height: 1rem;
+	line-height: 1rem;
+	color: #00B8A9;
+	cursor: pointer;
+}
+
+.main .print6 .kidlist li .kid6 {
+	background: url('../images/6.png') left center no-repeat;
+	background-size: 0.6rem;
+	text-indent: 0.8rem;
+	font-size: 0.6rem;
+	height: 1rem;
+	line-height: 1rem;
+	color: #00B8A9;
+}
+
+.main .print6 .kidlist li .role {
+	display: flex;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+.main .print6 .kidlist li .seeds-owned {
+	display: flex;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+.main .print6 .kidlist li .purchase-price {
+	display: flex;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+.main .print6 .kidlist li .current-price {
+	display: flex;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+.main .print6 .kidlist li .kidtimes {
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+.main .print6 .kidlist li .kidtimes .len {
+	text-align: left;
+	font-size: 0.20rem;
+	color: #999;
+}
+
+.main .print6 .kidlist li .kidtimes .times {
+	color: #999;
+	font-size: 0.2rem;
+	float: right !important;
+}
+
+.main .print6 .kidlist li .txt {
+	width: 15%;
+	text-align: left;
+	font-size: 0.28rem;
+}
+
+.main .print6 .kidlist li .val {
+	width: auto;
+	color: #00B8A9;
+	font-size: 0.28rem;
+}
+
+.main .print6 .more-btn {
+	text-align: center;
+	font-size: 0.20rem;
+	margin-top: 0.2rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	background: #FFFFFF;
+	box-shadow: 0.02rem 0.02rem 0.02rem 0.01rem #A6ABBD;
+	border-radius: 0.2rem;
+	color: #999;
+	cursor: pointer;
+}
+
+.main .print5 .empty,
+.main .print6 .empty {
+	font-size: 0.32rem;
+	background: #FFFFFF;
+	box-shadow: 0.02rem 0.02rem 0.02rem 0.01rem #A6ABBD;
+	border-radius: 0.2rem;
+	color: #999;
+	padding: 0.6rem;
+	text-align: center;
+}
+
+.main .load {
+	background: url('../images/loadding.gif') center no-repeat;
+	width: 100%;
+	height: 1rem;
+	margin-top: 1.5rem;
+}
+
+.footer {
+	width: 16rem;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	font-weight: 400;
+	text-align: right;
+	margin: 0 auto;
+	margin-right: 1.8rem;
+	font-size: 0.24rem;
+}
+
+.icon-tomato1,
+.icon-tomato2,
+.icon-tomato3,
+.icon-tomato4,
+.icon-tomato5,
+.icon-tomato6 {
+	width: 0.86rem;
+	height: 1.21rem;
+}
+
+.icon-tomato1 {
+	background: url('../images/1.png') no-repeat;
+	background-size: 50%;
+	animation: warn 3s ease-out 0s infinite;
+}
+
+.icon-tomato1 .tips {
+	margin-left: 0.6rem;
+}
+
+.icon-tomato2 {
+	background: url('../images/2.png') no-repeat;
+	background-size: 60%;
+	animation: warn 4s ease-out 0s infinite;
+}
+
+.icon-tomato2 .tips {
+	margin-left: 0.7rem;
+}
+
+.icon-tomato3 {
+	background: url('../images/3.png') no-repeat;
+	background-size: 70%;
+	animation: warn 5s ease-out 0s infinite;
+}
+
+.icon-tomato3 .tips {
+	margin-left: 0.8rem;
+}
+
+.icon-tomato4 {
+	background: url('../images/4.png') no-repeat;
+	background-size: 80%;
+	animation: warn 6s ease-out 0s infinite;
+}
+
+.icon-tomato4 .tips {
+	margin-left: 0.9rem;
+}
+
+.icon-tomato5 {
+	background: url('../images/5.png') no-repeat;
+	background-size: 90%;
+	animation: warn 7s ease-out 0s infinite;
+}
+
+.icon-tomato5 .tips {
+	margin-left: 1rem;
+}
+
+.icon-tomato6 {
+	background: url('../images/6.png') no-repeat;
+	background-size: 100%;
+	animation: warn 8s ease-out 0s infinite;
+}
+
+.icon-tomato6 .tips {
+	margin-left: 1.1rem;
+}
+
+
+/*停止动画*/
+
+.pause {
+	animation-play-state: paused;
+}
+
+
+/*动画*/
+
+@keyframes warn {
+	0% {
+		transform: scale(0.25);
+		opacity: 1;
+	}
+	30% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+.arrow_box {
+	position: relative;
+	background: #fff;
+	border: none;
+	border-radius: 0.06rem;
+	width: 2.4rem;
+	height: auto;
+	padding: 0.1rem 0.2rem;
+	margin: 0;
+	list-style: none;
+}
+
+.arrow_box:after,
+.arrow_box:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #fff;
+	border-width: 6px;
+	margin-top: -30px;
+}
+
+.arrow_box:before {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #fff;
+	border-width: 6px;
+	margin-top: -30px;
+}
+
+.arrow_box li {
+	font-size: 0.16rem;
+	height: 0.2rem;
+	line-height: 0.2rem;
+}
+
+
+/* 超小设备 (手机, 600px 以下屏幕设备) */
+
+@media only screen and (max-width: 600px) {}
+
+
+/* 中型设备（平板电脑，768 像素及以上） */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* 大型设备（笔记本电脑/台式机，992 像素及以上） */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* 超大型设备（大型笔记本电脑和台式机，1200 像素及以上） */
+
+@media only screen and (min-width: 1200px) {}
+
+
+/* 超大型设备（大型笔记本电脑和台式机，1440 像素及以上） */
+
+@media only screen and (min-width: 1440px) {}
